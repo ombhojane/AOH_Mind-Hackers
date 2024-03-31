@@ -1,0 +1,11 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+ 
+[packages]
+Flask= "3.0.0"
+google-generativeai= "0.3.2"
+gunicorn= "21.2.0" 
+[requires]
+python_version = "3.9"
