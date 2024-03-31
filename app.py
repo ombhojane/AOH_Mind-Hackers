@@ -7,10 +7,12 @@ from wtforms.validators import DataRequired
 import os
 import google.generativeai as genai
 
-api = os.environ.get("GENAI_API_KEY")
-genai.configure(api_key=api)
 
 app = Flask(__name__)
+
+
+api = os.environ.get("GENAI_API_KEY")
+genai.configure(api_key=api)
 
 @app.route('/')
 def home():
